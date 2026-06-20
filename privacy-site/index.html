@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ebookflowy 개인정보 처리방침</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font-family: -apple-system, "Segoe UI", Roboto, "Noto Sans KR", sans-serif;
+         line-height: 1.7; max-width: 820px; margin: 0 auto; padding: 24px 20px 80px;
+         color: #1a1a1a; background: #fff; }
+  @media (prefers-color-scheme: dark) { body { color: #e6e6e6; background: #161616; } a { color: #6db3ff; } }
+  h1 { font-size: 1.7rem; border-bottom: 2px solid #888; padding-bottom: 12px; }
+  h2 { font-size: 1.25rem; margin-top: 2em; }
+  h3 { font-size: 1.05rem; margin-top: 1.4em; }
+  table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 0.95rem; }
+  th, td { border: 1px solid #999; padding: 8px 10px; text-align: left; vertical-align: top; }
+  th { background: rgba(128,128,128,0.15); }
+  code { background: rgba(128,128,128,0.15); padding: 1px 5px; border-radius: 4px; }
+  .meta { color: #777; font-size: 0.9rem; }
+  .note { background: rgba(128,128,128,0.1); border-left: 4px solid #888; padding: 10px 14px; border-radius: 4px; }
+  .lang { font-size: 0.9rem; margin: 8px 0 20px; }
+  .lang a { margin: 0 4px; }
+</style>
+</head>
+<body>
+<nav class="lang">🌐 <a href="index.html">한국어</a> · <a href="en.html">English</a> · <a href="ja.html">日本語</a> · <a href="vi.html">Tiếng Việt</a></nav>
+
+<h1>ebookflowy 개인정보 처리방침</h1>
+<p class="meta">시행일: 2026년 6월 20일 · 최종 수정일: 2026년 6월 20일</p>
+
+<p>본 개인정보 처리방침은 Clipflowy(이하 “개발자” 또는 “회사”)가 제공하는 모바일 애플리케이션 <strong>ebookflowy</strong>(이하 “앱”)를 이용하는 사용자의 개인정보를 어떻게 수집·이용·보관·보호하는지를 설명합니다.
+  ebookflowy는 사용자의 문서를 기기에 저장하고 읽는 <strong>로컬 우선(local-first)</strong> 전자책/문서 리더입니다.</p>
+
+<h2>1. 핵심 요약</h2>
+<ul>
+  <li>사용자가 여는 문서 파일(PDF, EPUB, TXT, HWP 등)과 읽기 진행률·북마크·주석·설정은 <strong>사용자 기기 내부에만 저장</strong>되며, 회사 서버로 업로드되지 않습니다.</li>
+  <li>앱은 광고 게재(Google AdMob)와 원격 설정(Firebase Remote Config)을 위해 일부 기기 정보 및 광고 식별자를 제3자 서비스가 처리하도록 합니다.</li>
+  <li>회사는 사용자의 문서 내용을 열람하거나 수집하지 않습니다.</li>
+  <li>사용자는 광고 추적 동의 거부, 알림 거부, 데이터 삭제 등을 직접 제어할 수 있습니다.</li>
+</ul>
+
+<h2>2. 수집하는 정보 및 이용 목적</h2>
+<h3>2.1 사용자가 기기에 저장하는 정보 (회사가 수집하지 않음)</h3>
+<table>
+  <tr><th>항목</th><th>설명</th><th>저장 위치</th></tr>
+  <tr><td>문서 파일 및 콘텐츠</td><td>사용자가 앱에서 여는 PDF/EPUB/TXT/Markdown/CBZ/HWP 등</td><td>사용자 기기(로컬)</td></tr>
+  <tr><td>읽기 데이터</td><td>읽기 진행률, 북마크, 주석, 하이라이트, 라이브러리 목록, 검색 색인</td><td>사용자 기기(로컬 DB)</td></tr>
+  <tr><td>앱 설정</td><td>테마, 글꼴, TTS 설정 등 환경설정</td><td>사용자 기기(로컬)</td></tr>
+</table>
+<p class="note">위 데이터는 기기 내부 저장소 및 로컬 데이터베이스(SQLite)에만 보관됩니다. 회사는 이 정보에 접근하거나 수집하지 않습니다.</p>
+
+<h3>2.2 제3자 서비스를 통해 처리되는 정보</h3>
+<table>
+  <tr><th>제3자 서비스</th><th>처리되는 정보(예시)</th><th>목적</th></tr>
+  <tr><td>Google AdMob (광고)</td><td>광고 식별자(IDFA/AAID), 대략적 기기 정보, IP 주소, 광고 상호작용 데이터</td><td>앱 내 광고 게재 및 측정</td></tr>
+  <tr><td>Firebase Remote Config (Google)</td><td>앱 인스턴스 식별자, 기기/앱 버전 등 기본 기술 정보</td><td>기능 플래그·원격 설정 적용</td></tr>
+  <tr><td>기기 음성 합성(TTS) 엔진</td><td>읽어주기를 위해 전달되는 텍스트 구간</td><td>본문 음성 읽기 기능 제공(운영체제 TTS 엔진이 처리)</td></tr>
+  <tr><td>(선택) Google 계정 연동</td><td>사용자가 동기화/백업 기능을 직접 활성화한 경우의 인증 토큰 및 선택한 메타데이터</td><td>선택적 메타데이터 동기화/백업</td></tr>
+</table>
+<p class="note">선택 항목은 사용자가 해당 기능을 직접 켰을 때만 동작합니다. 사용하지 않으면 관련 데이터는 처리되지 않습니다.</p>
+
+<h3>2.3 자동으로 처리될 수 있는 정보</h3>
+<p>앱 및 제3자 SDK는 서비스 제공·보안·오류 진단을 위해 IP 주소, 기기 모델, 운영체제 버전, 앱 버전, 언어 설정 등 일반적인 기술 정보를 일시적으로 처리할 수 있습니다.</p>
+
+<h2>3. 기기 권한 안내</h2>
+<table>
+  <tr><th>권한</th><th>사용 목적</th></tr>
+  <tr><td>인터넷(네트워크)</td><td>광고 수신, 원격 설정, 선택적 동기화</td></tr>
+  <tr><td>광고 ID (Android <code>AD_ID</code>)</td><td>광고 게재 및 측정</td></tr>
+  <tr><td>알림 (POST_NOTIFICATIONS)</td><td>앱 알림 표시(사용자가 거부 가능)</td></tr>
+  <tr><td>포그라운드 서비스 / 미디어 재생</td><td>화면이 꺼진 상태에서도 TTS(읽어주기) 재생 유지</td></tr>
+  <tr><td>파일/문서 접근</td><td>사용자가 선택한 문서를 열어 표시(원본은 업로드되지 않음)</td></tr>
+</table>
+<p>모든 권한은 운영체제 설정에서 언제든지 변경하거나 철회할 수 있습니다.</p>
+
+<h2>4. 광고 및 추적(App Tracking Transparency)</h2>
+<p>앱은 Google AdMob을 통해 광고를 표시합니다. iOS에서는 추적을 위해 사용자의 명시적 동의(App Tracking Transparency)를 요청할 수 있으며, 동의하지 않으면 맞춤형(개인화) 광고 대신 비개인화 광고가 제공될 수 있습니다.
+  광고 개인화는 다음에서 관리할 수 있습니다.</p>
+<ul>
+  <li>iOS: 설정 → 개인정보 보호 및 보안 → 추적</li>
+  <li>Android: 설정 → Google → 광고</li>
+  <li>Google 광고 설정: <a href="https://adssettings.google.com">https://adssettings.google.com</a></li>
+</ul>
+
+<h2>5. 개인정보의 보관 및 파기</h2>
+<p>로컬에 저장된 데이터는 사용자가 앱을 삭제하거나 앱 내에서 데이터를 삭제하면 함께 제거됩니다. 제3자 서비스가 처리하는 데이터의 보관 기간은 해당 서비스의 정책을 따릅니다.</p>
+
+<h2>6. 제3자 서비스의 개인정보 처리방침</h2>
+<ul>
+  <li>Google 개인정보처리방침: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
+  <li>Google AdMob/광고 정책: <a href="https://support.google.com/admob/answer/6128543">https://support.google.com/admob/answer/6128543</a></li>
+  <li>Firebase 개인정보 및 보안: <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a></li>
+</ul>
+
+<h2>7. 아동의 개인정보</h2>
+<p>앱은 만 13세(또는 거주 국가에서 정한 연령) 미만 아동을 주 대상으로 하지 않으며, 아동의 개인정보를 고의로 수집하지 않습니다. 아동의 정보가 수집되었음을 알게 된 경우 지체 없이 삭제합니다.</p>
+
+<h2>8. 이용자의 권리</h2>
+<p>사용자는 관련 법령(예: 대한민국 개인정보 보호법, EU GDPR, 미국 CCPA 등)에 따라 자신의 개인정보에 대한 열람·정정·삭제·처리정지를 요청할 수 있습니다. 요청은 아래 연락처로 접수할 수 있습니다.</p>
+
+<h2>9. 보안</h2>
+<p>회사는 합리적인 기술적·관리적 보호조치를 적용합니다. 인증 토큰 등 민감한 로컬 데이터는 운영체제의 보안 저장소(Keychain/Keystore)를 사용하여 보관합니다.
+  다만 인터넷을 통한 전송이나 전자적 저장이 100% 안전함을 보장할 수는 없습니다.</p>
+
+<h2>10. 방침의 변경</h2>
+<p>본 방침은 법령이나 서비스 변경에 따라 개정될 수 있으며, 중요한 변경 시 앱 또는 본 페이지를 통해 공지합니다. 변경된 방침은 게시 시점부터 효력이 발생합니다.</p>
+
+<h2>11. 문의처</h2>
+<p>개인정보 보호책임자 / 운영자: 유토스페이스<br>이메일: <a href="mailto:clipflowy@gmail.com">clipflowy@gmail.com</a></p>
+
+</body>
+</html>
