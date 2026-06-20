@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ebookflowy Privacy Policy</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font-family: -apple-system, "Segoe UI", Roboto, "Noto Sans KR", sans-serif;
+         line-height: 1.7; max-width: 820px; margin: 0 auto; padding: 24px 20px 80px;
+         color: #1a1a1a; background: #fff; }
+  @media (prefers-color-scheme: dark) { body { color: #e6e6e6; background: #161616; } a { color: #6db3ff; } }
+  h1 { font-size: 1.7rem; border-bottom: 2px solid #888; padding-bottom: 12px; }
+  h2 { font-size: 1.25rem; margin-top: 2em; }
+  h3 { font-size: 1.05rem; margin-top: 1.4em; }
+  table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 0.95rem; }
+  th, td { border: 1px solid #999; padding: 8px 10px; text-align: left; vertical-align: top; }
+  th { background: rgba(128,128,128,0.15); }
+  code { background: rgba(128,128,128,0.15); padding: 1px 5px; border-radius: 4px; }
+  .meta { color: #777; font-size: 0.9rem; }
+  .note { background: rgba(128,128,128,0.1); border-left: 4px solid #888; padding: 10px 14px; border-radius: 4px; }
+  .lang { font-size: 0.9rem; margin: 8px 0 20px; }
+  .lang a { margin: 0 4px; }
+</style>
+</head>
+<body>
+<nav class="lang">🌐 <a href="index.html">한국어</a> · <a href="en.html">English</a> · <a href="ja.html">日本語</a> · <a href="vi.html">Tiếng Việt</a></nav>
+
+<h1>ebookflowy Privacy Policy</h1>
+<p class="meta">Effective date: June 20, 2026 · Last updated: June 20, 2026</p>
+
+<p>This Privacy Policy explains how Clipflowy (the “Developer” or “we”) collects, uses, stores, and protects the personal information of users of the mobile application <strong>ebookflowy</strong> (the “App”). ebookflowy is a <strong>local-first</strong> e-book and document reader that stores and reads your documents on your device.</p>
+
+<h2>1. Summary</h2>
+<ul>
+  <li>The documents you open (PDF, EPUB, TXT, HWP, etc.) and your reading progress, bookmarks, annotations, and settings are <strong>stored only on your device</strong> and are not uploaded to our servers.</li>
+  <li>To serve ads (Google AdMob) and apply remote configuration (Firebase Remote Config), the App allows certain device information and advertising identifiers to be processed by third-party services.</li>
+  <li>We do not read or collect the contents of your documents.</li>
+  <li>You can control ad-tracking consent, notifications, and data deletion yourself.</li>
+</ul>
+
+<h2>2. Information We Process and Purposes</h2>
+<h3>2.1 Information stored on your device (not collected by us)</h3>
+<table>
+  <tr><th>Item</th><th>Description</th><th>Storage location</th></tr>
+  <tr><td>Document files and content</td><td>PDF/EPUB/TXT/Markdown/CBZ/HWP and similar files you open in the App</td><td>Your device (local)</td></tr>
+  <tr><td>Reading data</td><td>Reading progress, bookmarks, annotations, highlights, library list, search index</td><td>Your device (local DB)</td></tr>
+  <tr><td>App settings</td><td>Theme, fonts, TTS and other preferences</td><td>Your device (local)</td></tr>
+</table>
+<p class="note">This data is kept only in your device storage and a local database (SQLite). We do not access or collect this information.</p>
+
+<h3>2.2 Information processed via third-party services</h3>
+<table>
+  <tr><th>Third-party service</th><th>Information processed (examples)</th><th>Purpose</th></tr>
+  <tr><td>Google AdMob (advertising)</td><td>Advertising identifier (IDFA/AAID), coarse device information, IP address, ad-interaction data</td><td>Serving and measuring in-app ads</td></tr>
+  <tr><td>Firebase Remote Config (Google)</td><td>App instance identifier, basic technical info such as device/app version</td><td>Applying feature flags / remote configuration</td></tr>
+  <tr><td>Device text-to-speech (TTS) engine</td><td>Text segments sent for read-aloud</td><td>Providing read-aloud (handled by the OS TTS engine)</td></tr>
+  <tr><td>(Optional) Google account linking</td><td>Authentication tokens and metadata you choose, only if you enable sync/backup</td><td>Optional metadata sync/backup</td></tr>
+</table>
+<p class="note">Optional items operate only when you turn the corresponding feature on. If unused, the related data is not processed.</p>
+
+<h3>2.3 Information that may be processed automatically</h3>
+<p>The App and third-party SDKs may temporarily process general technical information such as IP address, device model, OS version, app version, and language settings to provide the service, ensure security, and diagnose errors.</p>
+
+<h2>3. Device Permissions</h2>
+<table>
+  <tr><th>Permission</th><th>Purpose</th></tr>
+  <tr><td>Internet (network)</td><td>Receiving ads, remote configuration, optional sync</td></tr>
+  <tr><td>Advertising ID (Android <code>AD_ID</code>)</td><td>Serving and measuring ads</td></tr>
+  <tr><td>Notifications (POST_NOTIFICATIONS)</td><td>Showing app notifications (you may decline)</td></tr>
+  <tr><td>Foreground service / media playback</td><td>Keeping TTS (read-aloud) playing while the screen is off</td></tr>
+  <tr><td>File/document access</td><td>Opening and displaying documents you select (originals are not uploaded)</td></tr>
+</table>
+<p>All permissions can be changed or revoked at any time in your operating system settings.</p>
+
+<h2>4. Advertising and App Tracking Transparency</h2>
+<p>The App displays ads via Google AdMob. On iOS, it may request your explicit consent for tracking (App Tracking Transparency); if you decline, non-personalized ads may be shown instead of personalized ones. You can manage ad personalization here:</p>
+<ul>
+  <li>iOS: Settings → Privacy &amp; Security → Tracking</li>
+  <li>Android: Settings → Google → Ads</li>
+  <li>Google Ad Settings: <a href="https://adssettings.google.com">https://adssettings.google.com</a></li>
+</ul>
+
+<h2>5. Retention and Deletion</h2>
+<p>Locally stored data is removed when you delete the App or clear data within the App. Retention periods for data handled by third-party services follow those services’ policies.</p>
+
+<h2>6. Third-Party Privacy Policies</h2>
+<ul>
+  <li>Google Privacy Policy: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
+  <li>Google AdMob / Ads: <a href="https://support.google.com/admob/answer/6128543">https://support.google.com/admob/answer/6128543</a></li>
+  <li>Firebase Privacy &amp; Security: <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a></li>
+</ul>
+
+<h2>7. Children’s Privacy</h2>
+<p>The App is not primarily directed at children under 13 (or the age defined in your country) and does not knowingly collect children’s personal information. If we learn that such information has been collected, we will delete it without undue delay.</p>
+
+<h2>8. Your Rights</h2>
+<p>Under applicable laws (e.g., the Korean Personal Information Protection Act, EU GDPR, US CCPA), you may request access to, correction of, deletion of, or restriction of processing of your personal information. Requests can be sent to the contact below.</p>
+
+<h2>9. Security</h2>
+<p>We apply reasonable technical and administrative safeguards. Sensitive local data such as authentication tokens is stored using the operating system’s secure storage (Keychain/Keystore). However, no method of transmission over the Internet or electronic storage is 100% secure.</p>
+
+<h2>10. Changes to This Policy</h2>
+<p>This Policy may be revised due to legal or service changes; for material changes we will provide notice via the App or this page. The revised Policy takes effect upon posting.</p>
+
+<h2>11. Contact</h2>
+<p>Operator: Utospace<br>Email: <a href="mailto:clipflowy@gmail.com">clipflowy@gmail.com</a></p>
+
+</body>
+</html>
