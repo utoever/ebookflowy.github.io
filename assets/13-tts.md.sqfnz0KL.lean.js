@@ -1,0 +1,1 @@
+import{_ as e,o as l,c as i,a4 as t}from"./chunks/framework.BhEBm8_q.js";const c=JSON.parse('{"title":"소리내어 읽기 (TTS)","description":"","frontmatter":{},"headers":[],"relativePath":"13-tts.md","filePath":"13-tts.md"}'),r={name:"13-tts.md"};function n(s,a,T,o,d,h){return l(),i("div",null,[...a[0]||(a[0]=[t("",17)])])}const _=e(r,[["render",n]]);export{c as __pageData,_ as default};
